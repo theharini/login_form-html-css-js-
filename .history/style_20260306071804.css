@@ -1,0 +1,141 @@
+/* Styling for the entire page */
+body{
+    background: rgb(34,193,195);
+    /* Fallback background color */
+
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+    /* Gradient background from cyan to purple */
+
+    background-attachment: fixed;
+    /* Keeps background fixed while scrolling */
+
+    margin:0;
+    /* Removes default browser margin */
+
+    font-family: 'Poppins', sans-serif; 
+    /* Sets the font style for the whole page */
+}
+
+
+/* Styling for the form container */
+#form{
+    width:400px;
+    /* Form width */
+
+    margin:20vh auto 0 auto;
+    /* Centers the form horizontally and places it slightly down vertically */
+
+    background-color: whitesmoke;
+    /* Light background color */
+
+    border-radius: 5px;
+    /* Rounded corners */
+
+    padding:30px;
+    /* Space inside the form */
+}
+
+
+/* Styling for the heading */
+h1{
+    text-align: center;
+    /* Centers the text */
+
+    color:#792099;
+    /* Purple text color */
+}
+
+
+/* Styling for the register button */
+#form button{
+    background-color: #792099;
+    /* Purple button background */
+
+    color:white;
+    /* White text color */
+
+    border: 1px solid #792099;
+    /* Border with same color as background */
+
+    border-radius: 5px;
+    /* Rounded button edges */
+
+    padding:10px;
+    /* Space inside button */
+
+    margin:20px 0px;
+    /* Space above and below button */
+
+    cursor:pointer;
+    /* Changes mouse cursor to pointer on hover */
+
+    font-size:20px;
+    /* Button text size */
+
+    width:100%;
+    /* Button takes full width of form */
+}
+
+
+/* Styling for input field container */
+.input-group{
+    display:flex;
+    /* Uses flexbox layout */
+
+    flex-direction: column;
+    /* Places label and input vertically */
+
+    margin-bottom: 15px;
+    /* Space between input fields */
+}
+
+
+/* Styling for input fields */
+.input-group input{
+    border-radius: 5px;
+    /* Rounded input box */
+
+    font-size:20px;
+    /* Input text size */
+
+    margin-top:5px;
+    /* Space between label and input */
+
+    padding:10px;
+    /* Inner spacing */
+
+    border:1px solid rgb(34,193,195);
+    /* Default border color */
+}
+
+
+/* Remove default focus outline */
+.input-group input:focus{
+    outline:0;
+}
+
+
+/* Error message styling */
+.input-group .error{
+    color:rgb(242, 18, 18);
+    /* Red color for error message */
+
+    font-size:16px;
+    /* Error text size */
+
+    margin-top: 5px;
+}
+
+
+/* Input border when validation is successful */
+.input-group.success input{
+    border-color: #0cc477;
+    /* Green border for valid input */
+}
+
+
+/* Input border when validation fails */
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
+    /* Red border for invalid input */
+}

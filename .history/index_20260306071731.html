@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<!-- Defines the document type as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the HTML page and language set to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 so all characters display correctly -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Ensures compatibility with older versions of Internet Explorer -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive on mobile devices -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Links the external CSS file for styling -->
+
+    <script src="app.js" defer></script>
+    <!-- Links the JavaScript file.
+         "defer" makes sure JS loads after HTML is parsed -->
+
+    <title>Register</title>
+    <!-- Title shown in browser tab -->
+</head>
+
+<body>
+
+    <!-- Main container for the registration form -->
+    <div class="container">
+
+        <!-- Form element for user registration -->
+        <form action="" id="form">
+
+            <h1>Register</h1>
+            <!-- Heading of the form -->
+
+            <!-- Username input section -->
+            <div class="input-group">
+                <label for="username">Username</label>
+                <!-- Label connected to input field -->
+
+                <input type="text" id="username" name="username">
+                <!-- Text input for username -->
+
+                <div class="error"></div>
+                <!-- Area to display validation error messages -->
+            </div>
+
+            <!-- Email input section -->
+            <div class="input-group">
+                <label for="email">Email</label>
+
+                <input type="text" id="email" name="email" >
+                <!-- Input field where user enters email -->
+
+                <div class="error"></div>
+                <!-- Error message will appear here -->
+            </div>
+
+            <!-- Password input section -->
+            <div class="input-group">
+                <label for="password">Password</label>
+
+                <input type="password" id="password" name="password">
+                <!-- Password field hides typed characters -->
+
+                <div class="error"></div>
+            </div>
+
+            <!-- Confirm password input section -->
+            <div class="input-group">
+                <label for="cpassword">Confirm Password</label>
+
+                <input type="password" id="cpassword" name="cpassword">
+                <!-- User re-enters password for verification -->
+
+                <div class="error"></div>
+            </div>
+
+            <!-- Submit button for the form -->
+            <button type="submit">Register</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
